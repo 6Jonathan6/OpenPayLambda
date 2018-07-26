@@ -17,4 +17,7 @@ phases:
         - zip -9 -r ../lambda.zip * 
         - cd ../
         - ls -lt | cat
+artifacts:
+  files: 
+    -"*/lambda.zip"
         
