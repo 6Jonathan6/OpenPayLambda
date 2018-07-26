@@ -1,5 +1,5 @@
 {
-  "name": "openpay",
+  "name": "openpaylambda",
   "version": "1.0.0",
   "description": "Lambda and open pay sdk",
   "main": "index.js",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/6Jonathan6/OpenPayLambda/issues"
   },
-  "homepage": "https://github.com/6Jonathan6/OpenPayLambda#readme"
+  "homepage": "https://github.com/6Jonathan6/OpenPayLambda#readme",
+  "dependencies": {
+    "openpay": "^1.0.2"
+  }
 }
