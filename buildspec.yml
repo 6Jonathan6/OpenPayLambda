@@ -3,7 +3,6 @@ env:
   variables:
     NODE_ENV: "production"
 phases:
-  install:
     pre_build:
       commands:
         - echo Installing prod dependencies
