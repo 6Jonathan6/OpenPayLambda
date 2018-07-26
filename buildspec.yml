@@ -7,9 +7,9 @@ phases:
       commands:
         - echo Updating npm...
         - npm i npm@latest -g
-        - echo Installing prod dependencies
-        - npm install --production
     build:
       commands:
+        - echo Installing prod dependencies
+        - npm install --production
         - ls -a | cat
         
