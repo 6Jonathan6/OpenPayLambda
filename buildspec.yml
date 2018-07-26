@@ -19,6 +19,5 @@ phases:
         - ls -lt | cat
 artifacts:
   files: 
-    - '*/lambda.zip'
-  base-directory: /codebuild/output/src591913788/src
-        
+    - 'lambda.zip'
+  discard-paths: yes
