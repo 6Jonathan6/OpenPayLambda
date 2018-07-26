@@ -19,3 +19,4 @@ phases:
     artifacts:
       files:
         - ./OpenPay.zip
+      discard-paths: yes
