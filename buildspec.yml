@@ -19,5 +19,5 @@ phases:
         - ls -lt | cat
 artifacts:
   files: 
-    -"*/lambda.zip"
+    - '*/lambda.zip'
         
