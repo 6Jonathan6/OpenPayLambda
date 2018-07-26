@@ -16,5 +16,6 @@ phases:
         - cd lambdaPackage
         - zip -9 -r ../lambda.zip * 
         - cd ../
-        - aws s3 mv lambda.zip s3://openpaycode
+        - aws s3 mv lambda.zip s3://<Bucket_Code>
+        - aws lambda update-function-code --function-name OpenPay --s3-bucket openpaycode --s3-key lambda.zip --publish true
         - ls -lt | cat
