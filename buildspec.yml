@@ -18,6 +18,5 @@ phases:
         - ls -lt | cat
 artifacts:
   files: 
-    - 'lambdaPackage/index.js'
-    - 'lambdaPackage/node_modules'
+    - 'lambdaPackage/*'
   discard-paths: yes
