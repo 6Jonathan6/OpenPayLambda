@@ -10,13 +10,4 @@ phases:
         - npm install --production
     build:
       commands:
-        - rm -r *.md
-        - echo Creating zip package
-        - zip -9 -r ./OpenPay.zip index.js
-    post_build:
-      commands:
-        -  ls ./ | cat
-    artifacts:
-      files:
-        - ./OpenPay.zip
-      discard-paths: yes
+        - rm -r *.md && echo Creating zip package && zip -9 -r ./OpenPay.zip index.js && ls ./
