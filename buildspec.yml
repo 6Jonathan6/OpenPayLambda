@@ -16,8 +16,5 @@ phases:
         - cd lambdaPackage
         - zip -9 -r ../lambda.zip * 
         - cd ../
+        - aws s3 mv lambda.zip s3://openpaycode
         - ls -lt | cat
-artifacts:
-  files: 
-    - 'lambda.zip'
-  discard-paths: yes
