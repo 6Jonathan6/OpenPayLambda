@@ -1,0 +1,22 @@
+version: 0.2
+env:
+  variables:
+    S3_DEPLOY: "openpaycode" 
+    NODE_ENV: "production"
+phases:
+  install:
+    pre_build:
+      commands:
+        - echo Installing prod dependencies
+        - npm install --production
+        - rm -r *.md
+    build:
+      commands:
+        - echo Creating zip package
+        - zip -9 -r ../OpenPay.zip *
+    post_build:
+      commands:
+        aws s3 mv .
+    artifacts:
+      files:
+        - ../OpenPay.zip
