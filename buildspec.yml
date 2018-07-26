@@ -14,9 +14,10 @@ phases:
         - mkdir lambdaPackage
         - mv node_modules index.js ./lambdaPackage
         - cd lambdaPackage
+        - zip -9 -r ../lambda.zip * 
         - cd ../
         - ls -lt | cat
 artifacts:
   files: 
-    - 'lambdaPackage/*'
+    - 'lambda.zip'
   discard-paths: yes
