@@ -11,5 +11,9 @@ phases:
       commands:
         - echo Installing prod dependencies
         - npm install --production
+        - mkdir lambdaPackage
+        - mv node_module index.js ./lambdaPackage
+        - cd lambdaPackage
+        - zip -9 -r ../lambda.zip * 
         - ls -a | cat
         
