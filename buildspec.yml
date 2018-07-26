@@ -15,5 +15,5 @@ phases:
         - mv node_modules index.js ./lambdaPackage
         - cd lambdaPackage
         - zip -9 -r ../lambda.zip * 
-        - ls -a | cat
+        - ls -lt | cat
         
