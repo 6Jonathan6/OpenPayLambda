@@ -13,10 +13,10 @@ phases:
     build:
       commands:
         - echo Creating zip package
-        - zip -9 -r ../OpenPay.zip *
+        - zip -9 -r ./OpenPay.zip *
     post_build:
       commands:
-        aws s3 mv .
+        -  ls . | echo 
     artifacts:
       files:
-        - ../OpenPay.zip
+        - ./OpenPay.zip
