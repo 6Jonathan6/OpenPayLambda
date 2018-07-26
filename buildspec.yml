@@ -17,9 +17,8 @@ phases:
         - zip -9 -r ../lambda.zip * 
         - cd ../
         - ls -lt | cat
-        - pwd
 artifacts:
   files: 
     - '*/lambda.zip'
-  base-directory: ./ 
+  base-directory: /codebuild/output/src591913788/src
         
