@@ -1,5 +1,5 @@
 exports.handler = async (event) => {
     // TODO implement
-    console.log(event)
+    console.log("Hello World")
     return 'El pejes rules!';
 };
