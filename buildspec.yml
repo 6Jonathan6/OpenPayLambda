@@ -12,7 +12,7 @@ phases:
       commands:
         - rm -r *.md
         - echo Creating zip package
-        - zip -9 -r ./OpenPay.zip *
+        - zip -9 -r ./OpenPay.zip index.js
     post_build:
       commands:
         -  ls ./ | cat
