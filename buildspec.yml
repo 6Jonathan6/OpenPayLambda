@@ -5,8 +5,11 @@ env:
 phases:
     pre_build:
       commands:
+        - echo Updating npm...
+        - npm i npm@latest -g
         - echo Installing prod dependencies
         - npm install --production
     build:
       commands:
+        - la
         
